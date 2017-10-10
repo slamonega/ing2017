@@ -32,16 +32,9 @@
                     <li class="item text-center" ng-if="(!handlers || !handlers.length) && !areNavHandlersLoaded()">
                         <ion-spinner></ion-spinner>
                     </li>
-                    <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
-                        <a menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
-                            <i class="icon {{icon}}"></i> {{title | translate}}
-                            <span ng-show="!loading && badge" class="badge badge-positive">{{badge}}</span>
-                            <ion-spinner ng-if="loading" class="icon"></ion-spinner>
-                        </a>
-                    </li>
 
 <li class="mm-mycourses-handler">
-                        <a menu-close class="item item-icon-left" href="https://g3w.uns.edu.ar/guarani3w/acceso/">SIU-Guarani
+                        <a menu-close class="item item-icon-left" href="https://g3w.uns.edu.ar/guarani3w/acceso/">SIU-Guaraní
                          
                             
                             <i class="icon ion-ionic"></i>
@@ -55,6 +48,17 @@
                             <i class="icon ion-ionic"></i>
                         </a>
                     </li>
+
+
+
+                    <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
+                        <a menu-close class="item item-icon-left" ui-sref="{{state}}" title="{{title | translate}}" ng-class="{'item-icon-right': loading}">
+                            <i class="icon {{icon}}"></i> {{title | translate}}
+                            <span ng-show="!loading && badge" class="badge badge-positive">{{badge}}</span>
+                            <ion-spinner ng-if="loading" class="icon"></ion-spinner>
+                        </a>
+                    </li>
+
 
 
                     <li ng-repeat="item in customItems" class="mm-sidemenu-customitem">
