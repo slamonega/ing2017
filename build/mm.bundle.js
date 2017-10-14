@@ -66180,9 +66180,9 @@ angular.module('mm.addons.mod_wiki')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodleapp.uns",
-    "appname": "Moodle UNS",
-    "desktopappname": "Moodle UNS",
+    "app_id" : "com.moodleapp.unlp.ing",
+    "appname": "Ingeniería UNLP",
+    "desktopappname": "Ingeniería UNLP",
     "versioncode" : "2020",
     "versionname" : "3.3.2",
     "cache_expiration_time" : 300000,
@@ -66193,7 +66193,7 @@ angular.module('mm.core')
     "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "siteurl": "https://moodle.uns.edu.ar/moodle",
+    "siteurl": "https://www.asignaturas.ing.unlp.edu.ar/",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "true",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
